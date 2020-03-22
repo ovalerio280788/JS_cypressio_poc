@@ -8,7 +8,9 @@
   },
   "scripts": {
     "cypress": "cypress open",
-    "test": "cypress run"
+    "test": "cypress run",
+    "test-chrome": "cypress run -b chrome",
+    "test-firefox": "cypress run -b firefox"
   },
   "keywords": [],
   "author": "",
