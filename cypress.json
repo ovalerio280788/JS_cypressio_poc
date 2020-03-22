@@ -1,0 +1,11 @@
+{
+    "watchForFileChanges": false,
+    "baseUrl": "http://localhost:8082/",
+    "video": false,
+    "waitForAnimations": true,
+    "browser": "Chrome",
+    "env": {
+        "testing_valid_username" : "test",
+        "testing_valid_password" : "vL$j!Hbp165DMJTx3G"
+    }
+}
