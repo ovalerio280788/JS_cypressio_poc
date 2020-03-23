@@ -1,15 +1,15 @@
-# Cypressio POC as an example
+# Cypress-io POC as an example
 
-In this repository we can find a quick example/POC (proof of concept) of how I used Cypressio for a quick example for and End-to-End testing. With that I can start a new project from scratch if needed at some point in my daily work. 
+In this repository we can find a quick example/POC (proof of concept) of how I used Cypress-io for End-to-End testing. With that I can start a new project from scratch if needed in the future. 
 
-Also the idea with this POC is to practice and to know how Cypress works with automation and open my eyes to new automation frameworks, that way I can have a more clear understanding about a new automation tools and have a wide vision if at some point I have to compare different automation frameworks to give a proposal for a new automation solution for a client or for me.
+Also the idea with this POC is to practice and to know how Cypress-io works with automation and open my eyes to new automation frameworks, that way I can have a more clear understanding about a new automation tools and have a wide vision if at some point I have to compare different automation frameworks to give a proposal for a new automation solution for a client or for me.
 
 ## Application under test
-This section contians the basic configurations to have a valid testing application that will be used to create and run test cases as needed. This application is a sandbox application. In that way I am not depending of a third party web application that can change and make my tests fail.
+This section contians the basic configurations to have a valid testing application that will be used to create and run test cases as needed. This application is a sandbox application. In that way I am not depending on a third party web application that can change in a near future and fail my tests.
 
 In this repository, there is a "docker" folder, in this docker folder there is a docker-compose file. With that the idea is to run a Wordpress woocommerse application and use this application as our application under test.
 
-These requirements need to me met (donwload and install from the official pages):
+These requirements need to be met (donwload and install from the official pages):
 
 1- Install docker.
 
@@ -47,7 +47,7 @@ npx cypress open
 - `cypress/integration` folder: This folder contains all specs, or the implementation of the test cases.
 - `cypress/page-objects` folder: This folder contains all the page objects to be used in the spec files (test cases) to reuse the page locators.
 - `cypress/support/commands` folder: This file contains our custom commands, in this case I have a login command to be used for all test cases that need to go through the login page before executing something else.
-- `cypress.json` file: This file contains the configurations for Cypress, I mean, here I can override the default configuration for Cypress. For example, if we want to fun tests on Firefox or other browser further that Chrome. You can override all variables in this Cypress documentation: https://docs.cypress.io/guides/references/configuration.html#Options 
+- `cypress.json` file: This file contains some of the configurations for Cypress, I mean, here I can override the default configuration for Cypress. Here some documentation about some cypress configurations: https://docs.cypress.io/guides/references/configuration.html#Options 
 - `package.json` file: This file contains the dependencies for our project, in this case I have [Cypress](https://www.cypress.io/) and [cypress-xpath](https://github.com/cypress-io/cypress-xpath).
 Also in this file we have a "scripts" section where I have several options added as a kind of aliases to run tests with different configurations, you can see some examples later on this readme file.
 
